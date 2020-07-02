@@ -1,0 +1,157 @@
+/* Theme SASS Variables */
+* {
+  box-sizing: border-box;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus input:-webkit-autofill,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #414a51;
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset !important;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+body {
+  color: #414a51;
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+section {
+  max-width: 750px;
+  margin: auto;
+  padding: 40px;
+}
+
+.form-required:after {
+  content: "*";
+  color: #74b74a;
+  display: inline-block;
+  position: absolute;
+  height: 7px;
+  width: 7px;
+  line-height: 1;
+  margin-left: 2px;
+  margin-top: 3px;
+  opacity: 0.7;
+}
+
+.materialize input:not([type]),
+.materialize input[type="text"]:not(.browser-default),
+.materialize input[type="password"]:not(.browser-default),
+.materialize input[type="email"]:not(.browser-default),
+.materialize input[type="url"]:not(.browser-default),
+.materialize input[type="time"]:not(.browser-default),
+.materialize input[type="date"]:not(.browser-default),
+.materialize input[type="datetime"]:not(.browser-default),
+.materialize input[type="datetime-local"]:not(.browser-default),
+.materialize input[type="tel"]:not(.browser-default),
+.materialize input[type="number"]:not(.browser-default),
+.materialize input[type="search"]:not(.browser-default),
+.materialize textarea.materialize-textarea,
+.materialize .select-wrapper input.select-dropdown {
+  font-family: inherit;
+  box-sizing: border-box !important;
+  -webkit-transition: 0.4s all;
+  transition: 0.4s all;
+}
+.materialize input:not([type]):focus:not([readonly]),
+.materialize input[type="text"]:not(.browser-default):focus:not([readonly]),
+.materialize input[type="password"]:not(.browser-default):focus:not([readonly]),
+.materialize input[type="email"]:not(.browser-default):focus:not([readonly]),
+.materialize input[type="url"]:not(.browser-default):focus:not([readonly]),
+.materialize input[type="time"]:not(.browser-default):focus:not([readonly]),
+.materialize input[type="date"]:not(.browser-default):focus:not([readonly]),
+.materialize input[type="datetime"]:not(.browser-default):focus:not([readonly]),
+.materialize input[type="datetime-local"]:not(.browser-default):focus:not([readonly]),
+.materialize input[type="tel"]:not(.browser-default):focus:not([readonly]),
+.materialize input[type="number"]:not(.browser-default):focus:not([readonly]),
+.materialize input[type="search"]:not(.browser-default):focus:not([readonly]),
+.materialize textarea.materialize-textarea:focus:not([readonly]),
+.materialize .select-wrapper input.select-dropdown:focus {
+  border-bottom: 1px solid #74b74a;
+  box-shadow: none;
+}
+.materialize .input-field label {
+  max-width: calc(100% - 21px);
+  padding-right: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.materialize .input-field label.active {
+  max-width: 100%;
+  overflow: visible;
+}
+.materialize .input-field.focus label.active {
+  color: #74b74a;
+}
+.materialize textarea.materialize-textarea {
+  box-shadow: none;
+  box-sizing: content-box;
+  border-style: none none solid;
+  -webkit-border-image: initial;
+       -o-border-image: initial;
+          border-image: initial;
+  border: 0;
+  border-bottom: 1px solid #9e9e9e;
+  border-radius: 0px;
+  outline: none;
+  margin: 0px 0px 8px;
+  -webkit-transition: box-shadow 0.3s, border 0.3s;
+  transition: box-shadow 0.3s, border 0.3s;
+}
+.materialize .select-wrapper input.select-dropdown {
+  padding-right: 24px;
+}
+.materialize .select-wrapper select {
+  display: none;
+}
+.materialize .select-dropdown label {
+  overflow: visible;
+}
+.materialize .dropdown-content li > a,
+.materialize .dropdown-content li > span,
+.materialize [type="checkbox"] + span:not(.lever) {
+  color: #414a51;
+  font-size: 1rem;
+}
+.materialize .select-dropdown.dropdown-content li.selected.active span {
+  color: #74b74a;
+}
+.materialize [type="checkbox"]:checked + span:not(.lever):before {
+  border-right: 2px solid #74b74a;
+  border-bottom: 2px solid #74b74a;
+}
+.materialize #edit-submit {
+  background: #74b74a;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Montserrat;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1.846;
+  margin: 20px 0.75rem;
+  padding: 6px 16px;
+  text-align: center;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-transform: uppercase;
+  -webkit-transition: 0.4s all;
+  transition: 0.4s all;
+}
+.materialize #edit-submit:hover, .materialize #edit-submit:focus {
+  background-color: #5d933b;
+  color: #ffffff;
+  outline: 0;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
